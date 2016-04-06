@@ -44,8 +44,7 @@
             android:paddingRight="8dp"
             android:paddingBottom="8dp"
             android:textColor="?colorAccent"
-            android:maxLines="1"
-            android:singleLine="true"
+            android:maxLines="2"
             android:ellipsize="end" />
     </LinearLayout>
 
