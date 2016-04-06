@@ -31,7 +31,7 @@
             android:paddingTop="8dp"
             android:paddingRight="8dp"
             android:paddingBottom="4dp"
-            android:textColor="?android:textColor"
+            android:textColor="?colorAccent"
             android:ellipsize="end"
             android:maxLines="4" />
 
@@ -43,7 +43,7 @@
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:paddingBottom="8dp"
-            android:textColor="?colorAccent"
+            android:textColor="?android:textColor"
             android:maxLines="2"
             android:ellipsize="end" />
     </LinearLayout>
