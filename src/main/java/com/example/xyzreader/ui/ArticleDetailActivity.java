@@ -14,6 +14,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.WindowInsets;
 
 import com.example.xyzreader.R;
@@ -40,7 +41,11 @@ public class ArticleDetailActivity extends ActionBarActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // inside your activity (if you did not enable transitions in your theme)
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+
         super.onCreate(savedInstanceState);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
