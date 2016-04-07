@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
@@ -46,8 +47,10 @@ public class ArticleListActivity extends ActionBarActivity implements
 
         super.onCreate(savedInstanceState);
 
-        // set an exit transition
-        getWindow().setExitTransition(new Explode());
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
+            // set an exit transition
+            getWindow().setExitTransition(new Explode());
+        }
 
         setContentView(R.layout.activity_article_list);
 
